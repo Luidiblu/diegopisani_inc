@@ -13,18 +13,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- minify -->
-  <link href="https://unpkg.com/nes.css@2.1.0/css/nes.min.css" rel="stylesheet" />
-  <!-- latest -->
-  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-  <!-- core style only -->
-  <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
-
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <style>
+
     html,
     body,
     pre,
@@ -47,35 +41,6 @@
     <!-- Container 2-->
     <div class="container">
 
-      <!-- Navbar -->
-      <div>
-        <ul class="nav justify-content-end">
-          <li class="mr-2">
-            <a id="work" class="nes-btn">Work</a>
-
-            <script>
-              $("#work").click(function () {
-                $([document.documentElement, document.body]).animate({
-                  scrollTop: $("#mywork").offset().top
-                }, 2000);
-              });
-            </script>
-          </li>
-          <li>
-            <a id="contact" class="nes-btn">Contact</a>
-            <script>
-              $("#contact").click(function () {
-                $([document.documentElement, document.body]).animate({
-                  scrollTop: $("#contactme").offset().top
-                }, 2000);
-              });
-            </script>
-          </li>
-
-        </ul>
-      </div>
-      <!-- /Navbar -->
-
       <!-- Name -->
       <div style="height:100vh; " class=" text-center ">
         <div style="top:40%; position:relative;">
@@ -84,166 +49,8 @@
          </div>
       </div>
       <!-- /Name -->
-
-      <!-- Daily Quote -->
-      <div style=" height:100vh; " class=" d-flex justify-content-center align-items-center ">
-          <div  >
-              <a class=" nes-btn " onclick=" document.getElementById('dialog-quote').showModal();">Daily
-            Quote</a>
-        </div>
-      </div>
-      <div class="container">
-        <dialog class="nes-dialog " id="dialog-quote">
-          <form method="dialog">
-
-            <section class="nes-container with-title ">
-              <h3 class="title nes-text is-success">Quote Of The Day</h3>
-              <p id="quote">If things start happening, don't worry,
-                don't stew, just go right along and you'll start happening too.
-              </p>
-              <footer class="blockquote-footer"> <cite id="quoteauthor" title="Source Title">Dr. Seuss</cite>
-              </footer>
-            </section>
-            <menu class="dialog-menu">
-              <a onclick="document.getElementById('dialog-quote').close();" class="nes-btn is-success">Cool</a>
-            </menu>
-          </form>
-        </dialog>
-      </div>
-      <!-- /Daily Quote -->
-
-      <!-- About me -->
-      <div style="height:100vh; " class="d-flex justify-content-center align-items-center ">
-        <div>
-          <section class="nes-container with-title  mt-4">
-            <h3 class="title nes-text  ">About Me</h3>
-            <p class="nes-text " style="display: inline;color:#4f004d;">Location:</p> <p style="display: inline;">São Paulo, Brasil</p>
-            <br><br>
-            <p class="nes-text" style="display: inline;color:#4f004d;">Primary Experience:</p> <p style="display: inline;"> Javascript, Python, Elixir, Clojure, PHP, Rust, Go, GraphQL, Node.JS, Phoenix, Ionic, React Native, Apollo, Flutter, HTML5/CSS3, React, Angular, AWS, Scraping, Docker/Kubernetes, Linux, Windows, Git, TDD, Game Development, Bussines, Scrum/Agile.</p>
-            <br><br>
-
-            <span>When I was 7 years old, I started learning some HTML. Since then I've been studying technology and how the internet works. At 14, I programmed my first HTML website with CSS and JavaScript. At 15 I started to study social media and audiovisual because it's a thing which I appreciate and at that time it was something I considered worth learning. At 16 I programmed a program in python to calculate solar irradiance by a given geographic coordinate. At 18 I studied at LeWagon, an awesome Bootcamp. Now I’m eager for more, trying to make my life different and execute things I like to do.
-            </span>
-
-          </section>
-        </div>
-      </div>
-      <!-- /About me -->
-
-      <!-- Work -->
-      <div class=" text-center ">
-          <div style="top:80%; position:relative;">
-          <section class="nes-container with-title  mt-4">
-            <h3 id="mywork" class="title nes-text is-primary">Work</h3>
-  
-            <!-- Sbcotton -->
-                <div class="card my-3 " style="border: 0; ">
-                  <div class="row no-gutters">
-                    <div class="col-md-4 col-sm-12 col-xs-12 img-responsive text-center">
-                        <!-- <img class="col-md-4 col-sm-4 col-xs-12 img-responsive" src="assets/redrider.PNG" alt="project name"> -->
-                      <img class="img-responsive" alt="Gravatar image example" src="./assets/thinkseg.png" 
-                      style="image-rendering: pixelated; max-width: 50%; max-height: 50%;">
-                    </div>
-                    <div class="col-md-8 col-sm-12 col-xs-12">
-                      <div class="card-body">
-                        <h6 style="font-size: 90%;" class="card-title">Thinkseg</h6>
-                        <p style="font-size:80%;" class="card-text">Software Development Engineer</p>
-                        <a href="http://thinkseg.com/" class="nes-btn is-success">Website</a>
-                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              <!-- /sbcotton -->
-              <!-- Red Rider-->
-              <div class="card my-3 " style="border: 0; ">
-                <div class="row no-gutters">
-                  <div class="col-md-4 col-sm-12 col-xs-12 img-responsive text-center">
-                      <!-- <img class="col-md-4 col-sm-4 col-xs-12 img-responsive" src="assets/redrider.PNG" alt="project name"> -->
-                    <img class="img-responsive" alt="Gravatar image example" src="./assets/a55.png"
-                    style="image-rendering: pixelated; max-width: 50%; max-height: 50%;">
-                
-                  </div>
-                  <div class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="card-body">
-                      <h6 style="font-size: 90%;" class="card-title">Access 55</h6>
-                      <p style="font-size:80%;" class="card-text">Software Developer</p>
-                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                      <a href="https://a55.tech" class="nes-btn is-success">Website</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!-- /Red rider-->
-            <!-- How to manual -->
-            <div class="card my-3 " style="border: 0; ">
-                <div class="row no-gutters" >
-                  <div class="col-md-4 col-sm-12 col-xs-12 img-responsive text-center" >
-                      <!-- <img class="col-md-4 col-sm-4 col-xs-12 img-responsive" src="assets/redrider.PNG" alt="project name"> -->
-                    <img class="img-responsive " alt="Gravatar image example" src="./assets/lewagon.png" 
-                    style="image-rendering: pixelated; max-width: 50%; max-height: 50%; top:10%; position:relative;">
-                  </div>
-                  <div class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="card-body">
-                      <h6 style="font-size: 90%;" class="card-title">Le Wagon</h6>
-                      <p style="font-size:80%;" class="card-text">Teacher</p>
-                      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                      <a href="https://lewagon.com" class="nes-btn is-success">Website</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /How to manual-->
-          </section>
-        </div>
-      </div>
-      <!-- /Work -->
-
-      <!-- Contact me-->
-      <div style="height:100vh; " class=" text-center ">
-        <div style="top:40%; position:relative;">
-          <section class="nes-container with-title  mt-4">
-            <h3 id="contactme" class="title nes-text ">Contact Me</h3>
-            <div class="row">
-              <div class="col-6">
-                <ul class="nav ">
-                  <li>
-                    <a id="emailbtn" class="nes-btn "
-                      onclick="document.getElementById('dialog-default').showModal();">Email</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <ul class="nav justify-content-end">
-                  <li class="nav-item mr-3">
-                    <a href="https://github.com/luidiblu"><i class="nes-icon github is-large"></i></a>
-                  </li>
-                  <li class="nav-item ">
-                    <a href="https://www.linkedin.com/in/diegopisani"><i
-                        class="nes-icon linkedin is-large"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </section>
-        </div>
-      </div>
-
-
-      <dialog class="nes-dialog is-dark" id="dialog-default">
-        <form method="dialog">
-          <menu class="dialog-menu">
-          <p class="title">Email Me: hello@diegopisani.com</p>
-            <a onclick="document.getElementById('dialog-default').close();" class="nes-btn is-error">Exit</a>
-          </menu>
-      </dialog>
-      <!-- /Contact me-->
-
     </div>
     <!-- /Container 2 -->
-
   </div>
 
 
